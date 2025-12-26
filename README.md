@@ -99,19 +99,37 @@ The CV automatically adapts to different screen sizes:
 
 ## 📦 Deployment
 
-### Vercel (Recommended)
+### 🌐 Live Demo
 
-1. Push to GitHub
-2. Connect repository to Vercel
-3. Deploy automatically
+Visit the live CV at: **[https://jayc304.github.io/professional-cv/](https://jayc304.github.io/professional-cv/)**
+
+### GitHub Pages (Recommended for this project)
+
+This project is configured to automatically deploy to GitHub Pages. Every push to the `main` branch triggers an automatic deployment.
+
+**Quick Deploy:**
+```bash
+npm run deploy
+```
+
+**Manual Deploy:**
+```bash
+git add .
+git commit -m "Update CV"
+git push origin main
+```
+
+The CV will be live at `https://jayc304.github.io/professional-cv/` within 2-3 minutes.
+
+📖 **Detailed deployment guide**: See [DEPLOY.md](DEPLOY.md)
 
 ### Other Platforms
 
-The app can be deployed to any platform supporting Next.js:
-- Netlify
-- Railway
-- Heroku
-- AWS Amplify
+The app can also be deployed to:
+- **Vercel**: Connect GitHub repo for automatic deployments
+- **Netlify**: Drag and drop the `out/` folder after running `npm run build`
+- **Railway**, **Heroku**, **AWS Amplify**: Follow platform-specific Next.js guides
+
 
 ## 🤝 Contributing
 
