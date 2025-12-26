@@ -1,13 +1,13 @@
 # Professional CV - Tran Tien Anh
 
-A modern, responsive CV website built with Next.js and Tailwind CSS, featuring automatic PDF generation.
+A minimalist, professional CV website built with Next.js and Tailwind CSS, featuring a clean gray-scale aesthetic and automatic PDF generation.
 
 ## 🚀 Features
 
 - **Responsive Design**: Optimized for both desktop and mobile devices
-- **Modern UI**: Clean, professional design with Tailwind CSS
+- **Minimalist UI**: Professional, clean gray-scale design appropriate for corporate standards
 - **Auto PDF Generation**: Automatically generate PDF versions of the CV
-- **Print Functionality**: Built-in print and save as PDF buttons
+- **Print Friendly**: Optimized CSS for high-quality printing (Ctrl+P)
 - **Real-time Updates**: Hot reload during development
 
 ## 🛠️ Tech Stack
@@ -46,9 +46,9 @@ cd professional-cv
 npm install --legacy-peer-deps
 ```
 
-3. Run the development server:
+3. Run the development server (Port 3001 is required for PDF scripts):
 ```bash
-npm run dev
+npm run dev -- -p 3001
 ```
 
 4. Open [http://localhost:3001](http://localhost:3001) in your browser.
@@ -58,11 +58,8 @@ npm run dev
 ### Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run dev:pdf` - Start development server with auto PDF generation
-- `npm run generate-pdf` - Generate PDF once
-- `npm run simple-pdf` - Generate PDF with simple layout
-- `npm run screenshot-pdf` - Generate PDF from screenshot
-- `npm run debug-pdf` - Debug PDF generation
+- `npm run generate-pdf` - Generate high-quality PDF from CV (Recommended)
+- `npm run screenshot-pdf` - Alias for generate-pdf
 
 ### PDF Output
 
@@ -80,7 +77,7 @@ Edit `app/page.tsx` to update:
 
 ### Styling
 
-- Modify Tailwind classes in components
+- Modify Tailwind classes in components (currently using `gray-50` theme)
 - Update colors in `tailwind.config.ts`
 - Add custom CSS in `app/globals.css`
 
