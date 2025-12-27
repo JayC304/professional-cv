@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Mail, Phone, Calendar, Briefcase, GraduationCap, Code, Languages } from "lucide-react"
 
 export default function CV() {
@@ -9,15 +10,16 @@ export default function CV() {
         <header className="mb-8 flex flex-col md:flex-row items-center gap-6">
           {/* Avatar - moved to left */}
           <div className="flex-shrink-0">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
-              <img
-                src="/TIEN ANH 4x6.jpg"
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg relative">
+              <Image
+                src="/tien-anh-4x6.jpg"
                 alt="Tran Tien Anh"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
                 style={{
                   objectPosition: 'center 30%',
-                  objectFit: 'cover'
                 }}
+                priority
               />
             </div>
           </div>
